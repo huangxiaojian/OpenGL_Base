@@ -6,8 +6,7 @@ OpenGL_Base::OpenGL_Base(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
-
-	glWidget = new GLWidget(ui.centralWidget);
+	glWidget = new GLWidget(width(), height(), ui.centralWidget);
 
 	mainLayout = new QGridLayout();
 
